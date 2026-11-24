@@ -15,7 +15,8 @@ Oder manuell:
 1. **Einstellungen → Add-ons → Add-on Store → ⋮ → Repositories**
 2. `https://github.com/eporsche/kx-bridge-ha-addon` hinzufügen
 3. **KX-Bridge (Testing)** installieren und starten
-4. Web-UI unter `http://<home-assistant-ip>:7125` öffnen und den Drucker hinzufügen
+4. Benutzeroberfläche über Home Assistant (Ingress) oder direkt unter
+   `http://<home-assistant-ip>:7125` öffnen und den Drucker hinzufügen
 
 Weitere Hinweise: [kx-bridge/DOCS.md](kx-bridge/DOCS.md)
 

@@ -1,6 +1,6 @@
 name: KX-Bridge (Testing)
 description: Anycubic Kobra X – Moonraker Bridge für OrcaSlicer (Testing-Image)
-version: "0.1.0"
+version: "0.2.0"
 slug: kx_bridge
 url: https://gitea.it-drui.de/viewit/KX-Bridge-Release
 arch:
@@ -23,7 +23,11 @@ ports_description:
   7128/tcp: Moonraker-API (Drucker 4)
   7129/tcp: Moonraker-API (Drucker 5)
   7130/tcp: Moonraker-API (Drucker 6)
-webui: http://[HOST]:[PORT:7125]
+ingress: true
+ingress_port: 8099
+ingress_stream: true
+panel_icon: mdi:printer-3d
+panel_title: KX-Bridge
 watchdog: tcp://[HOST]:[PORT:7125]
 options:
   bridge_host_ip: ""

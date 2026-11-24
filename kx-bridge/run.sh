@@ -35,8 +35,13 @@ fi
 
 cd /app || exit 1
 
+# Ingress-Proxy für die Home-Assistant-Seitenleiste (Port 8099).
+nginx -c /opt/kx-ingress/nginx.conf -g 'daemon off;' &
+nginx_pid=$!
+
 child=""
 stop() {
+    kill -TERM "$nginx_pid" 2>/dev/null
     if [ -n "$child" ]; then
         kill -TERM "$child" 2>/dev/null
         wait "$child" 2>/dev/null
@@ -52,6 +57,7 @@ while :; do
     rc=$?
     if [ "$rc" -ne 0 ]; then
         echo "[addon] KX-Bridge mit Exit-Code $rc beendet." >&2
+        kill -TERM "$nginx_pid" 2>/dev/null
         exit "$rc"
     fi
     echo "[addon] KX-Bridge hat einen Neustart angefordert – starte neu ..."
