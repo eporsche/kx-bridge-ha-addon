@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1
+
+- Ingress: Kamera-Stream wird beim Kaltstart bis zu viermal angefragt, statt
+  nach 5 Sekunden mit „Stream nicht verfügbar“ abzubrechen
+
 ## 0.2.0
 
 - Web-UI über Home-Assistant-Ingress (Seitenleiste), auch für mehrere Drucker
