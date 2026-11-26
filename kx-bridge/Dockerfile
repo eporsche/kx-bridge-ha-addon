@@ -1,6 +1,5 @@
-# Dünner Wrapper um das offizielle KX-Bridge-Testing-Image (Multi-Arch).
-# Der Supervisor baut mit --pull, "Neu aufbauen" holt also den aktuellen Testing-Build.
-FROM gitea.it-drui.de/viewit/kx-bridge:testing
+# Dünner Wrapper um das offizielle KX-Bridge-Image (Multi-Arch), fest auf ein Release gepinnt.
+FROM gitea.it-drui.de/viewit/kx-bridge:1.0.0-rc1
 
 # nginx dient als Ingress-Proxy für die Home-Assistant-Seitenleiste.
 RUN apt-get update \

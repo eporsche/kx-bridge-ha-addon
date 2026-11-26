@@ -2,7 +2,7 @@
 
 Home-Assistant-Add-on für die [KX-Bridge](https://gitea.it-drui.de/viewit/KX-Bridge-Release)
 (Anycubic Kobra X – Moonraker Bridge für OrcaSlicer). Es verwendet das
-Testing-Image `gitea.it-drui.de/viewit/kx-bridge:testing`.
+Image `gitea.it-drui.de/viewit/kx-bridge:1.0.0-rc1`.
 
 Dies ist ein Community-Wrapper und kein offizielles Projekt der KX-Bridge.
 
@@ -14,7 +14,7 @@ Oder manuell:
 
 1. **Einstellungen → Add-ons → Add-on Store → ⋮ → Repositories**
 2. `https://github.com/eporsche/kx-bridge-ha-addon` hinzufügen
-3. **KX-Bridge (Testing)** installieren und starten
+3. **KX-Bridge** installieren und starten
 4. Benutzeroberfläche über Home Assistant (Ingress) oder direkt unter
    `http://<home-assistant-ip>:7125` öffnen und den Drucker hinzufügen
 

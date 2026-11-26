@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0
+
+- Basis-Image von `kx-bridge:testing` auf das Release `kx-bridge:1.0.0-rc1`
+  umgestellt (fester Tag statt beweglichem Testing-Build)
+
 ## 0.2.1
 
 - Ingress: Kamera-Stream wird beim Kaltstart bis zu viermal angefragt, statt

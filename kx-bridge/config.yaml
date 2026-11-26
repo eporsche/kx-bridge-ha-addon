@@ -1,6 +1,6 @@
-name: KX-Bridge (Testing)
-description: Anycubic Kobra X – Moonraker Bridge für OrcaSlicer (Testing-Image)
-version: "0.2.1"
+name: KX-Bridge
+description: Anycubic Kobra X – Moonraker Bridge für OrcaSlicer (1.0.0-rc1)
+version: "0.3.0"
 slug: kx_bridge
 url: https://gitea.it-drui.de/viewit/KX-Bridge-Release
 arch:

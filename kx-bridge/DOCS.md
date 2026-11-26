@@ -1,9 +1,8 @@
-# KX-Bridge (Testing)
+# KX-Bridge
 
 Dieses Add-on betreibt die [KX-Bridge](https://gitea.it-drui.de/viewit/KX-Bridge-Release)
 (Anycubic Kobra X – Moonraker Bridge für OrcaSlicer) unter Home Assistant. Es
-verwendet das Testing-Image `gitea.it-drui.de/viewit/kx-bridge:testing` aus
-[Issue #107](https://gitea.it-drui.de/viewit/KX-Bridge-Release/issues/107).
+verwendet das Image `gitea.it-drui.de/viewit/kx-bridge:1.0.0-rc1`.
 
 ## Einrichtung
 
@@ -27,7 +26,7 @@ mehreren Druckern werden die weiteren Instanzen (Ports 7126–7130) ebenfalls ü
 Ingress durchgereicht, der Drucker-Wechsel in der UI funktioniert also auch dort.
 
 Der Proxy schreibt die Adressen der UI zur Laufzeit um. Sollte nach einem neuen
-Testing-Build etwas in der Ingress-Ansicht nicht laden, funktioniert die UI
+Bridge-Build etwas in der Ingress-Ansicht nicht laden, funktioniert die UI
 weiterhin über den direkten Port 7125.
 
 ## Optionen
@@ -42,11 +41,10 @@ Konfiguration (`config.ini`, eigene Plugins) und Laufzeitdaten liegen im
 Add-on-Volume unter `/data/config` und `/data/data`. Sie überstehen Neustarts,
 Neuaufbau und Updates und sind in Home-Assistant-Backups enthalten.
 
-## Neuen Testing-Build holen
+## Bridge-Version
 
-`:testing` ist ein beweglicher Tag. Um den aktuellen Build zu laden: Add-on
-öffnen → Menü (⋮) → **Neu aufbauen**. Die Version in der Bridge-UI zeigt danach
-den neuen Build (z. B. `testing-fd86d71`).
+Das Add-on ist fest auf `kx-bridge:1.0.0-rc1` gepinnt. Neue Bridge-Versionen
+kommen als Add-on-Update über den Add-on Store.
 
 ## Bekanntes OrcaSlicer-2.5-Problem
 
